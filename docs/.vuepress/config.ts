@@ -39,11 +39,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '学习笔记',
             items: [
-              { text: '计算机网络基础', link: '/note/network/' },
               { text: '数据结构与算法', link: '/note/algorithm/' },
-              { text: '计算机操作系统', link: '/note/os/' },
-              { text: '数据库原理', link: '/note/db/' },
               { text: '计算机组成原理', link: '/note/computer/' },
+              { text: '计算机操作系统', link: '/note/os/' },
+              { text: '计算机网络', link: '/note/network/' },
+              { text: '数据库', link: '/note/db/' },
             ],
           },
         ],
