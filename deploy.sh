@@ -17,7 +17,7 @@ git commit -m "更新文档内容 $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有�
 echo "✅ Markdown 文件提交完毕"
 
 # 推送到远程仓库
-git push -u origin $src_branch 
+git push -u origin $src_branch
 echo "✅ 源码已推送到 $src_branch"
 
 # 生成静态文件 windows的话这里用build:win
