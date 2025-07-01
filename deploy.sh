@@ -13,12 +13,11 @@ site_branch=gh-pages # 推送的分支
 git add . # 把修改放入暂存区（staging area）
 
 # 提交 Markdown 源文件变更（显示上次更新时间用）
-git commit -m "更新文档内容 $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有文档变更，无需提交" # 提交到本地仓库
+git commit -m "deploy 源码推送 $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有文档变更，无需提交" # 提交到本地仓库
 echo "✅ Markdown 文件提交完毕"
 
 # 推送到远程仓库
 git push -f origin $src_branch
-# git push -u origin $src_branch
 echo "✅ 源码已推送到 $src_branch"
 
 # 生成静态文件 windows的话这里用build:win

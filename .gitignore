@@ -20,15 +20,3 @@ urls.txt
 
 # mac
 .DS_Store
-
-# 旧构建产物（曾经散落在根目录）
-*.html
-*.js
-*.css
-*.map
-archives/
-tags/
-about/
-categories/
-assets/
-public/
