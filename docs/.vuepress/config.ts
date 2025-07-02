@@ -54,12 +54,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         //items: [],
       },
       {
-        text: '个人成长',
+        text: '个人',
         link: '/pages/00fde7/',
         //items: [],
       },
       { text: '关于', link: '/about/' },
-      {text: '收藏',  link: '/pages/6044ac/',},
+      {text: '收藏',  link: '/pages/56cacf/',},
       {
         text: '索引',
         link: '/categories/',
