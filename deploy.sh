@@ -30,7 +30,7 @@ cd "$dist_path"
 git init
 git checkout -b gh-pages
 git add -A
-git commit -m "更新右上角github地址&移除draft $(date '+%Y-%m-%d %H:%M:%S')"
+git commit -m "更新服务器同步博客 $(date '+%Y-%m-%d %H:%M:%S')"
 git push -f $push_addr HEAD:$site_branch
 echo "✅ 推送完成！dist 已部署到 $site_branch 分支"
 
