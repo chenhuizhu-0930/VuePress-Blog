@@ -12,8 +12,8 @@ site_branch=gh-pages # 推送的分支
 # 推送源码到main
 git add . # 把修改放入暂存区（staging area）
 
-# 提交 Markdown 源文件变更（显示上次更新时间用）
-git commit -m "deploy 源码推送end $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有文档变更，无需提交" # 提交到本地仓库
+# 提交 Markdown 源文件变更（显示上次更新时间用） 这里修改commit备注！
+git commit -m "deploy 源码推送:更新微软生态博客 $(date '+%Y-%m-%d %H:%M:%S')" || echo "没有文档变更，无需提交" # 提交到本地仓库
 echo "✅ Markdown 文件提交完毕"
 
 # 推送到远程仓库
@@ -30,7 +30,8 @@ cd "$dist_path"
 git init
 git checkout -b gh-pages
 git add -A
-git commit -m "更新服务器同步博客 $(date '+%Y-%m-%d %H:%M:%S')"
+# 这里也要修改commit备注！
+git commit -m "更新微软生态博客 $(date '+%Y-%m-%d %H:%M:%S')"
 git push -f $push_addr HEAD:$site_branch
 echo "✅ 推送完成！dist 已部署到 $site_branch 分支"
 
